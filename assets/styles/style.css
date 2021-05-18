@@ -189,4 +189,24 @@ body {
     text-align: center;
 }
 
-.
+.movie-full-card__poster {
+    width: 300px;
+    float: left;
+    margin: 0 40px 20px 0;
+}
+
+.movie-full-card__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.movie-full-card__genres {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.movie-genre {
+    margin-right: 10px;
+}
