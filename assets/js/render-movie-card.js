@@ -1,6 +1,7 @@
 export default async function renderMovieCard(movie) {
     const movieCard = document.createElement('div');
     movieCard.className = 'movie-card';
+    movieCard.id = movie.id;
     const posterPath = movie.poster_path ? 'https://image.tmdb.org/t/p/w200' + movie.poster_path : './assets/images/no-poster.png';
     const movieCardContent = `<a class="movie-card__link" href="./movie.html">` +
         `                        <img class="movie-card__poster" src="${posterPath}" alt="movie-poster">` +
