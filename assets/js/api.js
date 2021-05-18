@@ -8,7 +8,7 @@ export let api = {
     page: '1',
     withWatchMonetizationTypes: 'flatrate',
     get currentRequestUrl() {
-        return `${this.server}?api_key=${this.apiKey}&language=${this.language}&sort_by=${this.sortBy}&include_adult=${this.includeAdult}&include_video=${this.includeVideo}&with_watch_monetization_types=${this.withWatchMonetizationTypes}`;
+        return `${this.server}?api_key=${this.apiKey}&language=${this.language}&sort_by=${this.sortBy}&include_adult=${this.includeAdult}&include_video=${this.includeVideo}&page=${api.page}&with_watch_monetization_types=${this.withWatchMonetizationTypes}`;
     }
 };
 

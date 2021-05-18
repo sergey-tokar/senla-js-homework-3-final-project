@@ -9,25 +9,9 @@
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('../fonts/roboto-500.woff2') format('woff2'), url('../fonts/roboto-500.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url('../fonts/roboto-700.woff2') format('woff2'), url('../fonts/roboto-700.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url('../fonts/roboto-900.woff2') format('woff2'), url('../fonts/roboto-900.woff') format('woff');
 }
 
 body {
@@ -37,7 +21,8 @@ body {
 }
 
 .content-wrapper {
-    max-width: 1440px;
+    width: 70%;
+    min-width: 1024px;
     margin: 30px auto;
 }
 
@@ -129,7 +114,7 @@ body {
 
 .movie-card__title {
     margin: 10px 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
 }
 
@@ -176,6 +161,26 @@ body {
     height: 35px;
     border-radius: 5px;
     padding: 0;
+}
+
+.pagination-item__button.selected {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+.pagination-item__button:disabled {
+    background-color: lightgray;
+    border: none;
+}
+
+.pagination-item__button:disabled:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .footer-info {
