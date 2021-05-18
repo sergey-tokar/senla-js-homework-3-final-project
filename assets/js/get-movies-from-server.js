@@ -1,4 +1,4 @@
-export default async function getDataFromServer(url) {
+export default async function getMoviesFromServer(url) {
     try {
         const response = await fetch(url);
         const result = await response.json();
