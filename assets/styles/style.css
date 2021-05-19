@@ -124,7 +124,7 @@ body {
 }
 
 .movie-card__realise-date,
-.movie-card__rating {
+.movie-card__vote-average {
     display: none;
 }
 
@@ -132,12 +132,12 @@ body {
     top: 10px;
 }
 
-.movie-card__rating {
+.movie-card__vote-average {
     top: 265px;
 }
 
 .movie-card:hover > .movie-card__realise-date,
-.movie-card:hover > .movie-card__rating {
+.movie-card:hover > .movie-card__vote-average {
     width: 100%;
     height: 25px;
     display: block;

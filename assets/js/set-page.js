@@ -1,6 +1,6 @@
-import renderPage from "./render-page.js";
+import renderMainPage from "./render-main-page.js";
 
-export default function setPage(event) {
+export default async function setPage(event) {
     if (!event.target.classList.contains('pagination-item__button')) {
         return;
     }
@@ -11,7 +11,8 @@ export default function setPage(event) {
     } else if (necessaryPage === "next") {
         necessaryPage = nextPage(currentPage);
     }
-    renderPage(necessaryPage);
+    await renderMainPage(necessaryPage);
+    sessionStorage.setItem('page', JSON.stringify(necessaryPage));
 }
 
 function previousPage(page) {
